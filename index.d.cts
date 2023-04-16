@@ -408,7 +408,7 @@ declare namespace axios {
   // Alias
   type RawAxiosRequestConfig<D = any> = AxiosRequestConfig<D>;
 
-  interface InternalAxiosRequestConfig<D = any> extends AxiosRequestConfig {
+  interface InternalAxiosRequestConfig<D = any> extends AxiosRequestConfig<D> {
     headers: AxiosRequestHeaders;
   }
 
